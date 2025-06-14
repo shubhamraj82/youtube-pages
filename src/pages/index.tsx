@@ -1,17 +1,15 @@
-import { VideoCard } from "@/components/VideoCard";
+import { Appbar } from "@/components/Appbar";
+import { LeftBar } from "@/components/LeftBar";
+import { VideoGrid } from "@/components/VideoGrid";
 
 export default function Home() {
   return (
-    <div>
-      <VideoCard
-        title={"how to learn coding in 30 days | code with me"}
-        image={"photo.jpg"}
-        thumbimage={"photo.jpg"}
-        author={"shubham raj"}
-        views={"1.2M views"}
-        timestamp={"2 days ago"}
-      ></VideoCard>
-    </div>  
-    
+    <main>
+      <Appbar/>
+      <div className="flex">
+      <LeftBar/>
+      <VideoGrid/>
+      </div>
+ </main>
   )
 }
